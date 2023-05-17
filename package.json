@@ -1,0 +1,31 @@
+{
+  "name": "@dcl/catalyst-api-specs",
+  "license": "Apache-2.0",
+  "version": "1.1.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "orval": "^6.15.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "27.0.5",
+    "typescript": "4.9.5"
+  },
+  "scripts": {
+    "build": "orval && yarn build:src",
+    "build:client": "orval",
+    "build:src": "tsc -b"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "tabWidth": 2
+  },
+  "dependencies": {
+    "yaml": "2.2.2"
+  }
+}
